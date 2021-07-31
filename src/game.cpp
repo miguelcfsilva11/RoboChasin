@@ -397,6 +397,10 @@ void Game::handleEvents()
         case SDLK_ESCAPE:
             isRunning = false;
 
+        // In case the user moves, update
+        // the player's position onto the screen
+        // depending on the key that was pressed
+
         case SDLK_w:
             
             playerMove = { -1, 0 };
