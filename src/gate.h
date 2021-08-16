@@ -17,6 +17,7 @@ public:
      */
     Gate(const Position &position, SDL_Renderer* renderer, const char* textureSheet);
 
+    void printIdentity() { std::cout << "Gate" << std::endl; }
     
     Position getPosition() const;
 };

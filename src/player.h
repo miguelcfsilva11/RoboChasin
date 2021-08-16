@@ -23,6 +23,9 @@ public:
      * @param position A Position struct representing the player's coordinates in the maze 
      */
     Player(const Position &position, SDL_Renderer* renderer, const char* textureSheet);
+
+    void printIdentity() { std::cout << "Player" << std::endl; }
+
     int getRow() const;
     int getCol() const;
     char getSymbol() const;

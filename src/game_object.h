@@ -31,6 +31,8 @@ public:
 	 */
 	void updateRender(bool animated, SDL_Rect& sourceRectangle, SDL_Rect& destinationRectangle, int speed = 0, int frames = 0);
 
+	virtual void printIdentity() { std::cout << "Game-Object" << std::endl; }
+
 protected:
 	
 	Position position;

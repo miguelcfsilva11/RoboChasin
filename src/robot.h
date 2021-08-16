@@ -22,6 +22,8 @@ public:
      */
     Robot(const Position &position, SDL_Renderer* renderer, const char* textureSheet);
 
+    void printIdentity() { std::cout << "Robot" << std::endl; }
+
     int getID() const;
     char getSymbol() const;
     int getRow() const;

@@ -18,6 +18,8 @@ public:
      */
     Post(const Position &position, char type, SDL_Renderer* renderer, const char* textureSheet);
     
+    void printIdentity() { std::cout << "Post" << std::endl; }
+    
     int getRow() const;
     int getCol() const;
     Position getPosition() const;
